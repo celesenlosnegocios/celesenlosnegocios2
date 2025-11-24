@@ -1,0 +1,1417 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Celes en los Negocios | Coaching Holístico para Dueñas de Negocio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Coaching holístico para dueñas de negocio que quieren escalar con bienestar, abundancia y propósito. Sesión Diagnóstico de 7Chakras de tu Negocio con Celes en los Negocios." />
+
+  <!-- Tipografías -->
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+
+    :root {
+      --color-deep-1: #3a1211;
+      --color-deep-2: #54171e;
+      --color-gold:   #d5b978;
+      --color-cream:  #f5ebda;
+
+      --radius-lg: 24px;
+      --radius-md: 18px;
+      --radius-pill: 999px;
+
+      --shadow-soft: 0 24px 60px rgba(58, 18, 17, 0.45);
+      --shadow-subtle: 0 18px 40px rgba(58, 18, 17, 0.35);
+      --shadow-mini: 0 8px 20px rgba(58, 18, 17, 0.35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+    }
+
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: radial-gradient(circle at top left, var(--color-deep-2) 0, var(--color-deep-1) 42%, var(--color-deep-1) 100%);
+      color: var(--color-cream);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimizeLegibility;
+      scroll-behavior: smooth;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .page {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 1120px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* NAVBAR */
+
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(16px);
+      background: linear-gradient(
+        to bottom,
+        rgba(58, 18, 17, 0.92),
+        rgba(58, 18, 17, 0.86),
+        rgba(58, 18, 17, 0.78),
+        transparent
+      );
+      border-bottom: 1px solid rgba(213, 185, 120, 0.18);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1.1rem 1.5rem 1.1rem;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+
+    .nav-title {
+      font-family: "Playfair Display", serif;
+      font-size: 1rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--color-cream);
+    }
+
+    .nav-sub {
+      font-size: 0.72rem;
+      color: rgba(245, 235, 218, 0.7);
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+      font-size: 0.88rem;
+    }
+
+    .nav-links a {
+      position: relative;
+      color: rgba(245, 235, 218, 0.78);
+      transition: color 0.25s ease;
+    }
+
+    .nav-links a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.25rem;
+      width: 0;
+      height: 1px;
+      background: var(--color-gold);
+      transition: width 0.28s ease;
+    }
+
+    .nav-links a:hover {
+      color: var(--color-cream);
+    }
+
+    .nav-links a:hover::after {
+      width: 100%;
+    }
+
+    .nav-cta {
+      padding: 0.55rem 1.35rem;
+      border-radius: var(--radius-pill);
+      background: var(--color-gold);
+      color: var(--color-deep-1);
+      font-size: 0.82rem;
+      font-weight: 600;
+      border: 1px solid rgba(245, 235, 218, 0.3);
+      box-shadow: 0 12px 28px rgba(213, 185, 120, 0.45);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, background 0.18s ease;
+      white-space: nowrap;
+    }
+
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 18px 40px rgba(213, 185, 120, 0.5);
+      background: var(--color-gold);
+    }
+
+    @media (max-width: 840px) {
+      .nav-links {
+        display: none;
+      }
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 4.5rem 0 3.75rem;
+    }
+
+    .hero-heading {
+      text-align: center;
+      max-width: 46rem;
+      margin: 0 auto 2rem;
+    }
+
+    .hero-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.25rem 0.85rem;
+      border-radius: var(--radius-pill);
+      background: rgba(58, 18, 17, 0.75);
+      border: 1px solid rgba(213, 185, 120, 0.45);
+      color: rgba(245, 235, 218, 0.85);
+      font-size: 0.78rem;
+      margin: 0 auto 1.15rem;
+    }
+
+    .pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--color-gold);
+    }
+
+    .hero-title {
+      font-family: "Playfair Display", serif;
+      font-size: clamp(2.35rem, 3.1vw, 3.1rem);
+      line-height: 1.1;
+      color: var(--color-cream);
+      letter-spacing: 0.02em;
+    }
+
+    .hero-title span {
+      color: var(--color-gold);
+    }
+
+    .hero-shell {
+      background: radial-gradient(circle at top left, rgba(213, 185, 120, 0.08) 0, rgba(245, 235, 218, 0.12) 24%, rgba(84, 23, 30, 0.82) 72%, rgba(58, 18, 17, 0.98) 100%);
+      border-radius: 32px;
+      padding: 0.9rem;
+      box-shadow: var(--shadow-soft);
+      border: 1px solid rgba(213, 185, 120, 0.18);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: center;
+    }
+
+    .hero-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(circle at 10% 0%, rgba(213, 185, 120, 0.2) 0, transparent 55%),
+        radial-gradient(circle at 100% 80%, rgba(213, 185, 120, 0.22) 0, transparent 55%);
+      opacity: 0.8;
+      pointer-events: none;
+    }
+
+    .hero-shell > * {
+      position: relative;
+      z-index: 2;
+    }
+
+    .video-frame {
+      border-radius: 24px;
+      background: radial-gradient(circle at 0 0, rgba(213, 185, 120, 0.12) 0, rgba(58, 18, 17, 0.98) 50%, rgba(58, 18, 17, 1) 100%);
+      border: 1px solid rgba(213, 185, 120, 0.3);
+      box-shadow: var(--shadow-subtle);
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 16 / 9; /* tamaño del VSL como antes */
+    }
+
+    .video-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+      border-radius: inherit;
+    }
+
+    .hero-below {
+      max-width: 42rem;
+      margin: 2.2rem auto 0;
+      text-align: center;
+    }
+
+    .hero-subtitle {
+      font-size: 1.02rem;
+      line-height: 1.7;
+      color: rgba(245, 235, 218, 0.86);
+      max-width: 34rem;
+      margin: 0 auto 1.4rem;
+    }
+
+    .hero-support {
+      font-size: 0.95rem;
+      color: rgba(245, 235, 218, 0.7);
+      max-width: 30rem;
+      margin: 0 auto 1.6rem;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      margin-top: 1.2rem;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.95rem 2.2rem;
+      border-radius: var(--radius-pill);
+      background: var(--color-gold);
+      color: var(--color-deep-1);
+      font-size: 0.96rem;
+      font-weight: 600;
+      border: 1px solid rgba(245, 235, 218, 0.4);
+      box-shadow: 0 18px 45px rgba(213, 185, 120, 0.58);
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 24px 60px rgba(213, 185, 120, 0.65);
+      background: var(--color-gold);
+    }
+
+    .btn-primary span {
+      font-size: 1.1rem;
+    }
+
+    /* Botones grandes (hero + CTA principal) */
+    .btn-big {
+      font-size: 1.05rem;
+      padding: 1.1rem 2.9rem;
+    }
+
+    .hero-actions .btn-big,
+    .cta-actions .btn-big {
+      max-width: 26rem;
+      width: 100%;
+      justify-content: center;
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.85rem 1.9rem;
+      border-radius: var(--radius-pill);
+      border: 1px solid var(--color-gold);
+      background: transparent;
+      color: var(--color-cream);
+      font-size: 0.9rem;
+      font-weight: 500;
+      gap: 0.45rem;
+      box-shadow: 0 0 0 rgba(0,0,0,0);
+      transition: background 0.2s ease, color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .btn-secondary span {
+      font-size: 1rem;
+    }
+
+    .btn-secondary:hover {
+      background: rgba(213, 185, 120, 0.12);
+      color: var(--color-cream);
+      transform: translateY(-1px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.35);
+    }
+
+    .hero-note {
+      font-size: 0.8rem;
+      color: rgba(245, 235, 218, 0.7);
+      max-width: 26rem;
+      text-align: center;
+    }
+
+    .hero-note strong {
+      color: var(--color-gold);
+      font-weight: 500;
+    }
+
+    @media (max-width: 880px) {
+      .hero {
+        padding-top: 3.5rem;
+      }
+      .hero-shell {
+        padding: 0.7rem;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .hero-shell {
+        padding: 0.6rem;
+      }
+    }
+
+    /* SECTION GENERIC */
+
+    section {
+      padding: 3.5rem 0;
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 2.4rem;
+    }
+
+    .section-kicker {
+      font-size: 0.78rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: rgba(245, 235, 218, 0.7);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: "Playfair Display", serif;
+      font-size: 1.8rem;
+      color: var(--color-cream);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-subtitle {
+      font-size: 0.98rem;
+      max-width: 32rem;
+      margin: 0 auto;
+      line-height: 1.7;
+      color: rgba(245, 235, 218, 0.75);
+    }
+
+    .section-cta-inline {
+      text-align: center;
+      margin-top: 2.5rem;
+    }
+
+    @media (max-width: 640px) {
+      section {
+        padding: 3rem 0;
+      }
+      .section-title {
+        font-size: 1.55rem;
+      }
+      .section-cta-inline {
+        margin-top: 2rem;
+      }
+    }
+
+    /* TESTIMONIOS */
+
+    .section-testimonios {
+      background: radial-gradient(circle at top, rgba(213, 185, 120, 0.06) 0, rgba(58, 18, 17, 1) 55%);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.7rem;
+    }
+
+    @media (max-width: 1024px) {
+      .testimonials-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 720px) {
+      .testimonials-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .testimonial-card {
+      background: linear-gradient(145deg, rgba(84, 23, 30, 0.96), rgba(58, 18, 17, 1));
+      border-radius: 18px;
+      padding: 1.3rem 1.2rem 1.25rem;
+      border: 1px solid rgba(213, 185, 120, 0.24);
+      box-shadow: var(--shadow-mini);
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+      position: relative;
+      overflow: hidden;
+      transform-origin: center;
+      transition: transform 0.22s ease, box-shadow 0.22s ease, border-color 0.22s ease;
+    }
+
+    .testimonial-card::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at top left, rgba(213, 185, 120, 0.16), transparent 55%);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.4);
+      border-color: rgba(213, 185, 120, 0.4);
+    }
+
+    .testimonial-card:hover::before {
+      opacity: 1;
+    }
+
+    .testimonial-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .testimonial-name {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--color-cream);
+    }
+
+    .testimonial-result-badge {
+      font-size: 0.72rem;
+      color: var(--color-deep-1);
+      background: var(--color-gold);
+      padding: 0.28rem 0.7rem;
+      border-radius: var(--radius-pill);
+      text-transform: uppercase;
+      letter-spacing: 0.09em;
+      white-space: nowrap;
+    }
+
+    .testimonial-result {
+      font-size: 0.86rem;
+      color: rgba(245, 235, 218, 0.9);
+      font-weight: 500;
+    }
+
+    .testimonial-summary {
+      font-size: 0.84rem;
+      line-height: 1.6;
+      color: rgba(245, 235, 218, 0.82);
+    }
+
+    .testimonial-video {
+      margin-top: 0.4rem;
+      border-radius: 14px;
+      border: 1px dashed rgba(213, 185, 120, 0.65);
+      background: rgba(58, 18, 17, 0.9);
+      padding: 0.85rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.55rem;
+      font-size: 0.8rem;
+      color: rgba(245, 235, 218, 0.78);
+    }
+
+    .testimonial-video-text {
+      font-size: 0.8rem;
+      line-height: 1.5;
+      color: rgba(245, 235, 218, 0.8);
+    }
+
+    /* Videos verticales: tamaño grande y proporcionado */
+    .testimonial-video-embed {
+      width: 100%;
+      max-width: 100%;
+      aspect-ratio: 9 / 16;        /* alto típico de video vertical */
+      border-radius: 16px;
+      overflow: hidden;
+      background: #000;
+    }
+
+    .testimonial-video-embed iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    /* FILOSOFÍA / 7 CHAKRAS */
+
+    .section-filosofia {
+      background: linear-gradient(160deg, var(--color-deep-1), var(--color-deep-2));
+      border-top: 1px solid rgba(213, 185, 120, 0.16);
+      border-bottom: 1px solid rgba(213, 185, 120, 0.16);
+    }
+
+    .filosofia-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.6rem;
+      margin-top: 2.2rem;
+    }
+
+    @media (max-width: 960px) {
+      .filosofia-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 640px) {
+      .filosofia-grid {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .filosofia-item {
+      background: rgba(58, 18, 17, 0.92);
+      border-radius: 18px;
+      padding: 1.15rem 1.3rem;
+      border: 1px solid rgba(213, 185, 120, 0.26);
+      display: flex;
+      gap: 0.85rem;
+      align-items: flex-start;
+      box-shadow: var(--shadow-mini);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .filosofia-icon {
+      width: 30px;
+      height: 30px;
+      border-radius: 999px;
+      background: radial-gradient(circle at 30% 20%, rgba(213, 185, 120, 0.9) 0, rgba(213, 185, 120, 0.5) 40%, rgba(84, 23, 30, 1) 100%);
+      flex-shrink: 0;
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+    }
+
+    .filosofia-title {
+      font-size: 0.94rem;
+      font-weight: 600;
+      color: var(--color-cream);
+      margin-bottom: 0.3rem;
+    }
+
+    .filosofia-text {
+      font-size: 0.86rem;
+      line-height: 1.7;
+      color: rgba(245, 235, 218, 0.8);
+    }
+
+    /* CTA DESTACADA */
+
+    .section-cta {
+      padding: 3.8rem 0 3.8rem;
+    }
+
+    .cta-shell {
+      border-radius: 24px;
+      background: radial-gradient(circle at top left, rgba(213, 185, 120, 0.08) 0, rgba(84, 23, 30, 0.96) 45%, rgba(58, 18, 17, 1) 100%);
+      border: 1px solid rgba(213, 185, 120, 0.4);
+      padding: 2.4rem 2.1rem 2.3rem;
+      display: block;
+      box-shadow: var(--shadow-subtle);
+    }
+
+    .cta-title {
+      font-family: "Playfair Display", serif;
+      font-size: 1.6rem;
+      margin-bottom: 0.7rem;
+      color: var(--color-cream);
+      text-align: center;
+    }
+
+    .cta-text {
+      font-size: 0.94rem;
+      line-height: 1.8;
+      color: rgba(245, 235, 218, 0.82);
+      margin-bottom: 1.4rem;
+      max-width: 36rem;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+
+    .cta-list {
+      list-style: none;
+      font-size: 0.88rem;
+      color: rgba(245, 235, 218, 0.84);
+      margin-bottom: 1.6rem;
+      max-width: 40rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .cta-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.6rem;
+      margin-bottom: 0.45rem;
+    }
+
+    .cta-bullet {
+      width: 6px;
+      height: 6px;
+      margin-top: 0.45rem;
+      border-radius: 999px;
+      background: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    .cta-actions {
+      display: flex;
+      justify-content: center;
+      margin-top: 0.7rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .cta-note {
+      font-size: 0.82rem;
+      color: rgba(245, 235, 218, 0.7);
+      max-width: 30rem;
+      margin: 0.9rem auto 0;
+      text-align: center;
+    }
+
+    /* POR QUÉ ELEGIR */
+
+    .section-benefits {
+      border-top: 1px solid rgba(213, 185, 120, 0.22);
+    }
+
+    .benefits-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(0, 1.2fr);
+      gap: 2.6rem;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 880px) {
+      .benefits-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+    }
+
+    .benefits-intro {
+      font-size: 0.95rem;
+      line-height: 1.8;
+      color: rgba(245, 235, 218, 0.82);
+    }
+
+    .benefits-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    .benefit-item-title {
+      font-size: 0.98rem;
+      font-weight: 600;
+      color: var(--color-gold);
+      margin-bottom: 0.2rem;
+    }
+
+    .benefit-item-text {
+      font-size: 0.9rem;
+      line-height: 1.8;
+      color: rgba(245, 235, 218, 0.82);
+    }
+
+    /* FAQ */
+
+    .section-faq {
+      background: radial-gradient(circle at top, rgba(213, 185, 120, 0.06) 0, rgba(58, 18, 17, 1) 55%);
+      border-top: 1px solid rgba(213, 185, 120, 0.22);
+    }
+
+    .faq-list {
+      max-width: 720px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+    }
+
+    details.faq-item {
+      border-radius: 16px;
+      border: 1px solid rgba(213, 185, 120, 0.3);
+      background: rgba(58, 18, 17, 0.95);
+      padding: 0.85rem 1.1rem;
+      box-shadow: var(--shadow-mini);
+      transition: border-color 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    details.faq-item[open] {
+      border-color: rgba(213, 185, 120, 0.6);
+      background: rgba(84, 23, 30, 0.98);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    .faq-item summary {
+      cursor: pointer;
+      list-style: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-cream);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-toggle {
+      font-size: 1.1rem;
+      color: var(--color-gold);
+      flex-shrink: 0;
+    }
+
+    .faq-body {
+      margin-top: 0.7rem;
+      font-size: 0.86rem;
+      line-height: 1.7;
+      color: rgba(245, 235, 218, 0.82);
+      padding-top: 0.4rem;
+      border-top: 1px dashed rgba(213, 185, 120, 0.5);
+    }
+
+    /* FOOTER */
+
+    footer {
+      border-top: 1px solid rgba(213, 185, 120, 0.3);
+      background: #3a1211;
+      padding: 1.8rem 0 2.1rem;
+      margin-top: 1rem;
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+      font-size: 0.8rem;
+      color: rgba(245, 235, 218, 0.78);
+      text-align: center;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      font-size: 0.78rem;
+    }
+
+    .footer-links a {
+      color: rgba(245, 235, 218, 0.78);
+      transition: color 0.2s ease;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-gold);
+    }
+
+    /* REVEAL ANIMATIONS */
+
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .delay-1 { transition-delay: 0.1s; }
+    .delay-2 { transition-delay: 0.18s; }
+    .delay-3 { transition-delay: 0.26s; }
+    .delay-4 { transition-delay: 0.34s; }
+    .delay-5 { transition-delay: 0.42s; }
+    .delay-6 { transition-delay: 0.5s; }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <!-- NAVBAR -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <div class="nav-brand">
+          <div>
+            <div class="nav-title">Celes en los Negocios</div>
+            <div class="nav-sub">Coaching holístico para dueñas de negocio</div>
+          </div>
+        </div>
+        <nav class="nav-links">
+          <a href="#testimonios">Testimonios</a>
+          <a href="#filosofia">Método 7 Chakras</a>
+          <a href="#porque">Por qué elegirnos</a>
+          <a href="#faq">Preguntas frecuentes</a>
+          <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="nav-cta">
+            Agendar diagnóstico
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+
+      <!-- HERO -->
+      <section class="hero">
+        <div class="container">
+
+          <div class="hero-heading reveal">
+            <div class="hero-pill">
+              <span class="pill-dot"></span>
+              Coaching holístico para crecer sin apagar tu energía
+            </div>
+            <h1 class="hero-title">
+              Escalá tu negocio sin sacrificar tu <span>bienestar interior</span>
+            </h1>
+          </div>
+
+          <div class="hero-shell reveal delay-1">
+            <div class="video-frame">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/GCGesFZFjX0?si=b4kvTosRKpAgQRA1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+          </div>
+
+          <div class="hero-below reveal delay-2">
+            <p class="hero-subtitle">
+              Acompaño a dueñas de negocio que ya están facturando, pero sienten que la forma en la que sostienen su negocio está drenando su energía, su creatividad y su disfrute.
+            </p>
+            <p class="hero-support">
+              Trabajamos estrategia, mentalidad y energía para que tu próxima expansión se sienta más liviana, más coherente y mucho más abundante.
+            </p>
+
+            <div class="hero-actions">
+              <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="btn-primary btn-big">
+                <span>●</span>
+                Agendar diagnóstico de 7chakras de tu negocio
+              </a>
+              <p class="hero-note">
+                <strong>Sesión 1:1</strong> para revisar los 7 chakras de la entidad de tu negocio y abrir el portal a tu próximo nivel de facturación y bienestar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- TESTIMONIOS -->
+      <section id="testimonios" class="section-testimonios">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-kicker">Resultados reales</div>
+            <h2 class="section-title">Mujeres que eligieron crecer en coherencia con su energía</h2>
+            <p class="section-subtitle">
+              No se trata de trabajar más, sino de alinear tu modelo de negocio, tus límites y tu energía
+              para que la expansión se sostenga en el tiempo.
+            </p>
+          </div>
+
+          <div class="testimonials-grid">
+            <!-- Testimonio FLOR 1 -->
+            <article class="testimonial-card reveal delay-1">
+              <div class="testimonial-top">
+                <div class="testimonial-name">Flor</div>
+                <div class="testimonial-result-badge">Nueva identidad &amp; clientas alineadas</div>
+              </div>
+              <div class="testimonial-result">
+                De un mensaje antiguo a talleres llenos con su nueva frecuencia.
+              </div>
+              <div class="testimonial-summary">
+                Flor tenía comunidad en YouTube e Instagram hablando de psicología, pero ya no se sentía representada.
+                En el proceso actualizamos el mensaje, trabajamos sombras y abrimos espacio para hablar de energía
+                y creatividad desde la arteterapia.
+              </div>
+              <div class="testimonial-video">
+                <div class="testimonial-video-text">
+                  <strong>Video testimonio de Flor — Cambio de mensaje y nicho</strong>
+                </div>
+                <div class="testimonial-video-embed">
+                  <iframe width="504" height="903" src="https://www.youtube.com/embed/p8iq65OE3ok" title="Flor - Testimonio de la mentoría 7Chakras del Negocio🙌" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio FLOR 2 -->
+            <article class="testimonial-card reveal delay-2">
+              <div class="testimonial-top">
+                <div class="testimonial-name">Flor</div>
+                <div class="testimonial-result-badge">Estrategia &amp; ecosistema sostenible</div>
+              </div>
+              <div class="testimonial-result">
+                De renunciar a su trabajo a sostener un negocio propio con planificación clara.
+              </div>
+              <div class="testimonial-summary">
+                Luego de dejar su empleo en relación de dependencia, Flor quería que su proyecto dejara de ser improvisado.
+                Diseñamos juntos estructura, planificación y una forma de mostrarse que se sintiera auténtica para ella.
+              </div>
+              <div class="testimonial-video">
+                <div class="testimonial-video-text">
+                  <strong>Video testimonio de Flor — Profesionalizar su negocio</strong>
+                </div>
+                <div class="testimonial-video-embed">
+                  <iframe width="511" height="903" src="https://www.youtube.com/embed/joy_dXsOh_Q" title="Flor (facilitarconsciencia) - Testimonio sobre la mentoria 7Chakras de tu Negocio 💕" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio ANI -->
+            <article class="testimonial-card reveal delay-3">
+              <div class="testimonial-top">
+                <div class="testimonial-name">Ani</div>
+                <div class="testimonial-result-badge">Vínculo amoroso con su negocio</div>
+              </div>
+              <div class="testimonial-result">
+                De generar dinero con algo que no la llenaba a un negocio espejo de su evolución.
+              </div>
+              <div class="testimonial-summary">
+                Ani sentía que su negocio no estaba alineado con su propósito. Trabajamos su relación con la
+                entidad del negocio, su identidad como líder y la forma en que elegía sostenerlo día a día.
+              </div>
+              <div class="testimonial-video">
+                <div class="testimonial-video-text">
+                  <strong>Video testimonio de Ani — Vínculo con la entidad del negocio</strong>
+                </div>
+                <div class="testimonial-video-embed">
+                  <iframe width="508" height="903" src="https://www.youtube.com/embed/KFR6iwuGiMY" title="Ani - Testimonio sobre la mentoria 7Chakras de tu Negocio💎" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio LUANA -->
+            <article class="testimonial-card reveal delay-4">
+              <div class="testimonial-top">
+                <div class="testimonial-name">Luana</div>
+                <div class="testimonial-result-badge">Orden &amp; vida diseñada</div>
+              </div>
+              <div class="testimonial-result">
+                De un trabajo que la drenaba en Brasil a trabajar con vista al mar.
+              </div>
+              <div class="testimonial-summary">
+                Después de emigrar, Luana terminó en un empleo que la agotaba. Nos enfocamos en estructura, orden y
+                estrategia para que su propio negocio le permitiera vivir la vida que imaginaba en la playa.
+              </div>
+              <div class="testimonial-video">
+                <div class="testimonial-video-text">
+                  <strong>Video testimonio de Luana — Estructura para una vida con vista al mar</strong>
+                </div>
+                <div class="testimonial-video-embed">
+                  <!-- Placeholder vertical mientras se define embed final -->
+                  <iframe width="508" height="903" src="https://www.youtube.com/embed/jpT73mahAb8" title="Luana - Testimonio sobre la mentoría 7Chakras de tu Negocio💕" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </article>
+
+            <!-- Testimonio DANNA -->
+            <article class="testimonial-card reveal delay-5">
+              <div class="testimonial-top">
+                <div class="testimonial-name">Danna</div>
+                <div class="testimonial-result-badge">Claridad &amp; ventas inmediatas</div>
+              </div>
+              <div class="testimonial-result">
+                De caos viral a agenda llena solo por ordenar su negocio.
+              </div>
+              <div class="testimonial-summary">
+                Un reel la llevó de 2k a más de 50k seguidoras en días y el sistema colapsó. En cinco sesiones
+                ordenamos estrategia, estructura y procesos para sostener el volumen de clientas que estaba llegando.
+              </div>
+              <div class="testimonial-video">
+                <div class="testimonial-video-text">
+                  <strong>Testimonio de Danna — Del caos viral a la estructura</strong>
+                </div>
+                <div class="testimonial-video-embed">
+                  <!-- Placeholder hasta grabar el testimonio en vertical -->
+                  <iframe src="https://drive.google.com/file/d/1PD1N4ME8WeS_adbF6cvsl1hEbntcSkJe/preview" width="640" height="580" allow="autoplay"></iframe>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <div class="section-cta-inline reveal">
+            <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="btn-secondary">
+              <span>→</span>
+              Quiero mi diagnóstico de los 7 chakras de mi negocio
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FILOSOFÍA HOLÍSTICA / MÉTODO 7 CHAKRAS -->
+      <section id="filosofia" class="section-filosofia">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-kicker">Método 7 Chakras del Negocio</div>
+            <h2 class="section-title">Tu negocio es un cuerpo energético que también quiere orden y expansión</h2>
+            <p class="section-subtitle">
+              En 90 días trabajamos los 7 centros vitales de tu negocio: ordenamos sistemas, activamos el deseo,
+              fortalecemos decisiones, alineamos propósito, pulimos comunicación, creamos visión estratégica
+              y reconectamos con tu canal creativo.
+            </p>
+          </div>
+
+          <div class="filosofia-grid">
+            <!-- Raíz -->
+            <div class="filosofia-item reveal delay-1">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Raíz — Sistemas &amp; Seguridad</div>
+                <div class="filosofia-text">
+                  Aterrizamos la base material de tu negocio: organización, sistemas y flujo mínimo de ingresos
+                  para que sientas piso, estabilidad y una estructura que te sostiene día a día.
+                </div>
+              </div>
+            </div>
+
+            <!-- Sacro -->
+            <div class="filosofia-item reveal delay-2">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Sacro — Deseo &amp; Creatividad</div>
+                <div class="filosofia-text">
+                  Reconectamos con el deseo y el disfrute de tu negocio: ofertas que te entusiasman,
+                  clientas con las que querés trabajar y una agenda que honre tu placer y tu creatividad.
+                </div>
+              </div>
+            </div>
+
+            <!-- Plexo solar -->
+            <div class="filosofia-item reveal delay-3">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Plexo Solar — Poder &amp; Liderazgo</div>
+                <div class="filosofia-text">
+                  Transformamos miedo al rechazo, comparación y síndrome del impostor en confianza, límites claros
+                  y decisiones firmes. Fortalecés tu rol de líder y dejás de autosabotear tu propio éxito.
+                </div>
+              </div>
+            </div>
+
+            <!-- Corazón -->
+            <div class="filosofia-item reveal delay-4">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Corazón — Propósito &amp; Conexión</div>
+                <div class="filosofia-text">
+                  Sanamos la desconexión con tu propósito y reabrimos el canal del dar y recibir. Redefinimos tu misión,
+                  tus valores y tu narrativa para que tus ventas vuelvan a tener alma y emoción.
+                </div>
+              </div>
+            </div>
+
+            <!-- Garganta -->
+            <div class="filosofia-item reveal delay-5">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Garganta — Comunicación &amp; Visibilidad</div>
+                <div class="filosofia-text">
+                  Liberamos tu voz de la autocensura y el miedo a ser juzgada. Construimos un mensaje claro,
+                  storytelling auténtico y presencia magnética para que comunicar y vender se sienta liviano.
+                </div>
+              </div>
+            </div>
+
+            <!-- Tercer ojo -->
+            <div class="filosofia-item reveal delay-6">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Tercer Ojo — Visión &amp; Estrategia</div>
+                <div class="filosofia-text">
+                  Pasamos de la confusión y la dispersión a una visión clara. Diseñamos estrategia global,
+                  planificación y objetivos para que sepas exactamente cuál es tu siguiente paso.
+                </div>
+              </div>
+            </div>
+
+            <!-- Corona -->
+            <div class="filosofia-item reveal">
+              <div class="filosofia-icon"></div>
+              <div>
+                <div class="filosofia-title">Chakra Corona — Conexión &amp; Propósito Mayor</div>
+                <div class="filosofia-text">
+                  Reconectamos con la misión profunda de tu negocio y con algo más grande que tu día a día:
+                  visión a largo plazo, impacto colectivo y una fe renovada en lo que estás construyendo.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="section-cta-inline reveal">
+            <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="btn-secondary">
+              <span>→</span>
+              Quiero alinear los 7 chakras de mi negocio
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA SESIÓN / PROGRAMA 7 CHAKRAS -->
+      <section id="diagnostico" class="section-cta">
+        <div class="container">
+          <div class="cta-shell reveal">
+            <h2 class="cta-title">¿Listas para un negocio que sostenga tu energía y tu próxima expansión?</h2>
+            <p class="cta-text">
+              Te acompañamos en el crecimiento de la entidad de tu negocio tanto a nivel espiritual como de facturación,
+              para que desbloquees nuevos niveles de presencia, liderazgo y resultados. La Metodología 7 Chakras del Negocio
+              es un contenedor de 90 días donde tu negocio deja de drenar tu energía y empieza a amplificarla.
+            </p>
+            <ul class="cta-list">
+              <li>
+                <span class="cta-bullet"></span>
+                <span>12 sesiones 1:1 conmigo para trabajar tu energía, tu mentalidad, tu liderazgo y la identidad espiritual de tu negocio.</span>
+              </li>
+              <li>
+                <span class="cta-bullet"></span>
+                <span>12 sesiones 1:1 con mi equipo para acompañarte de la mano en la implementación, revisión de números y creación de nuevos niveles de facturación.</span>
+              </li>
+              <li>
+                <span class="cta-bullet"></span>
+                <span>Llamadas grupales y una comunidad íntima de mujeres emprendedoras que están en el mismo punto que vos, con las mismas ganas de comerse el mundo.</span>
+              </li>
+              <li>
+                <span class="cta-bullet"></span>
+                <span>Bonos exclusivos: audios, ebook, ejercicios prácticos y un chat disponible para vos conmigo y con mi equipo durante los 3 meses de acompañamiento.</span>
+              </li>
+            </ul>
+            <div class="cta-actions">
+              <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="btn-primary btn-big">
+                <span>●</span>
+                Reservar mi diagnóstico de chakras del negocio
+              </a>
+            </div>
+            <p class="cta-note">
+              Reservás tu horario directo en Calendly y recibís la confirmación por email. En esa sesión definimos juntas
+              si este contenedor de 3 meses es el paso que tu negocio está pidiendo ahora.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- POR QUÉ ELEGIR CELES EN LOS NEGOCIOS -->
+      <section id="porque" class="section-benefits">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-kicker">Por qué elegirnos</div>
+            <h2 class="section-title">Por qué elegir Celes en los Negocios</h2>
+            <p class="section-subtitle">
+              Este no es un programa masivo ni genérico. Es un espacio cuidado, profundo y muy humano
+              para mujeres que quieren que su negocio esté a la altura de lo que realmente son.
+            </p>
+          </div>
+
+          <div class="benefits-layout">
+            <div class="benefits-intro reveal">
+              Celes en los Negocios nace de haber vivido las dos caras del crecimiento: la expansión económica
+              y el cansancio interno de sostener un negocio a pura fuerza de voluntad. Por eso, todo lo que
+              hacemos busca honrar tanto tus números como tu sistema nervioso.
+              <br /><br />
+              Vas a encontrar un acompañamiento que baja a tierra la espiritualidad, que toma en serio tus metas
+              de facturación y que, al mismo tiempo, respeta tus ritmos, tus emociones y tu deseo de vivir una vida
+              que valga la pena más allá del trabajo.
+            </div>
+
+            <ul class="benefits-list">
+              <li class="reveal delay-2">
+                <div class="benefit-item-title">Metodología holística y accionable</div>
+                <div class="benefit-item-text">
+                  No nos quedamos solo en “hablar de energía” ni solo en “hacer estrategias”.
+                  Diseñamos un camino donde cada insight interno se traduce en decisiones concretas
+                  sobre tu oferta, tus precios, tu agenda y tu forma de vender.
+                </div>
+              </li>
+              <li class="reveal delay-3">
+                <div class="benefit-item-title">Acompañamiento realmente personalizado</div>
+                <div class="benefit-item-text">
+                  No hay dos negocios iguales. Adaptamos cada herramienta a tu contexto, facturación,
+                  disponibilidad de tiempo y etapa de vida. El objetivo es que el plan se sienta posible,
+                  sostenible y alineado con lo que vos necesitás hoy.
+                </div>
+              </li>
+              <li class="reveal delay-4">
+                <div class="benefit-item-title">Expansión medible en energía y resultados</div>
+                <div class="benefit-item-text">
+                  Trabajamos con hitos claros: más orden interno, más foco, más disfrute al vender,
+                  mejor relación con el dinero y, sí, nuevos niveles de facturación que se sientan merecidos
+                  y sostenibles para vos.
+                </div>
+              </li>
+              <li class="reveal delay-5">
+                <div class="benefit-item-title">Un espacio seguro para ser ambiciosa y sensible</div>
+                <div class="benefit-item-text">
+                  Acá podés traer tu ambición sin culpa y tu sensibilidad sin vergüenza.
+                  Es un contenedor donde se valida tu experiencia, se respetan tus procesos
+                  y se celebra cada paso de tu camino de expansión.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="section-cta-inline reveal">
+            <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="btn-secondary">
+              <span>→</span>
+              Quiero explorar si este programa es para mí
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- FAQ -->
+      <section id="faq" class="section-faq">
+        <div class="container">
+          <div class="section-header reveal">
+            <div class="section-kicker">Preguntas frecuentes</div>
+            <h2 class="section-title">Lo que suelen preguntarse antes de dar el siguiente paso</h2>
+            <p class="section-subtitle">
+              Si todavía tenés dudas, revisá estas respuestas. Si hay algo que no está acá,
+              podés escribirnos y te respondemos de forma directa y honesta.
+            </p>
+          </div>
+
+          <div class="faq-list">
+            <details class="faq-item reveal">
+              <summary>
+                <span>¿Para quién es este proceso de coaching holístico para negocios?</span>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-body">
+                Está pensado para dueñas de negocio, emprendedoras y profesionales de servicios (coaches, terapeutas,
+                consultoras, creativas, etc.) que ya tienen algo de tracción, pero sienten que su energía, su estructura
+                o su modelo actual no pueden sostener el siguiente nivel sin llevarlas al límite.
+              </div>
+            </details>
+
+            <details class="faq-item reveal delay-1">
+              <summary>
+                <span>¿Qué tipo de resultados puedo esperar?</span>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-body">
+                Cada proceso es único, pero los resultados más frecuentes incluyen: claridad de oferta, orden interno,
+                más foco, mejor relación con el dinero, mejoras en la facturación, límites sanos con clientas,
+                y sobre todo, una sensación de coherencia entre quién sos y cómo se ve tu negocio.
+              </div>
+            </details>
+
+            <details class="faq-item reveal delay-2">
+              <summary>
+                <span>¿Necesito tener un negocio “espiritual” para trabajar con vos?</span>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-body">
+                No. Trabajamos desde un enfoque holístico, pero eso no significa que tu negocio tenga que ser espiritual.
+                Sí es importante que estés abierta a mirar lo que pasa en tu mundo interno y no solo en los números.
+              </div>
+            </details>
+
+            <details class="faq-item reveal delay-3">
+              <summary>
+                <span>¿Cómo son las sesiones y cuánto dura el proceso?</span>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-body">
+                Las sesiones son online, por videollamada, de 60 a 75 minutos. Combinamos conversación estratégica,
+                ejercicios prácticos y trabajo energético. La duración total del acompañamiento es de 3 meses,
+                para que la transformación tenga tiempo de asentarse y verse reflejada en la realidad de tu negocio.
+              </div>
+            </details>
+
+            <details class="faq-item reveal delay-4">
+              <summary>
+                <span>¿Qué pasa después de reservar el diagnóstico de chakras del negocio?</span>
+                <span class="faq-toggle">+</span>
+              </summary>
+              <div class="faq-body">
+                Elegís día y horario en Calendly y recibís la confirmación por email. En la sesión hacemos
+                un mapeo energético-estratégico de tu negocio, identificamos bloqueos principales y te comparto
+                una hoja de ruta clara. Si ambas sentimos que el programa de 3 meses es para vos, te explico
+                cómo continuar; si no, te llevás igual claridad y próximos pasos.
+              </div>
+            </details>
+          </div>
+
+          <div class="section-cta-inline reveal">
+            <a href="https://calendly.com/asistenciaacuariologia/diagnostico-de-chakras?month=2025-11" target="_blank" rel="noopener" class="btn-secondary">
+              <span>→</span>
+              Si, quiero mi trnasformacion
+            </a>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="container footer-inner">
+        <div>
+          © 2025 <strong>Celes en los Negocios</strong>. Todos los derechos reservados.
+        </div>
+        <div class="footer-links">
+          <a href="#!">Aviso Legal</a>
+          <a href="#!">Política de Privacidad</a>
+          <a href="#!">Términos y Condiciones</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- JS: Animaciones de aparición suaves en scroll -->
+  <script>
+    const revealElements = document.querySelectorAll(".reveal");
+
+    if ("IntersectionObserver" in window) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("is-visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.18 }
+      );
+
+      revealElements.forEach((el) => observer.observe(el));
+    } else {
+      // Fallback para navegadores sin IntersectionObserver
+      revealElements.forEach((el) => el.classList.add("is-visible"));
+    }
+  </script>
+</body>
+</html>
